@@ -1,0 +1,40 @@
+@import "/scss/globals";
+@import "/scss/nav";
+@import "/scss/main";
+@import "/scss/footer";
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Rajdhani:wght@400;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $c_night;
+  color: $c_white;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+
+  &-track {
+    background-color: $c_night;
+  }
+
+  &-thumb {
+    background-color: $c_timberwolf;
+    border-radius: 4px;
+    border: 1px solid $c_night;
+  }
+
+  &-button {
+    display: none;
+  }
+}

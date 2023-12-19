@@ -1,0 +1,99 @@
+.nav {
+  display: grid;
+  grid-template-columns: 1fr [content-start] 1fr [content-end] 1fr;
+  position: fixed;
+  top: 0;
+  z-index: 90;
+  height: 120px;
+  width: 100dvw;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  .con {
+    grid-column: content;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 120px;
+    gap: clamp(0px, 1dvw, 40px);
+    height: 100%;
+    width: clamp(350px, 90dvw, 1200px);
+
+    .menu-block {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: 1fr;
+      height: 100%;
+      padding: 0 40px 0 10px;
+      background-color: $c_grey;
+
+      .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+
+        img {
+          height: 110px;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: end;
+        align-items: center;
+        gap: clamp(10px, 3dvw, 40px);
+        list-style: none;
+
+        li {
+          height: 100%;
+          font-size: clamp(14px, 1.7dvw, 16px);
+
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            transition: color 0.2s;
+
+            &:hover {
+              color: $c_main-red;
+            }
+          }
+        }
+      }
+    }
+
+    .phone-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $c_main-red;
+
+      > a {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: clamp(5px, 0.5dvw, 10px);
+        color: $c_night;
+
+        i {
+          aspect-ratio: 1 / 1;
+          font-size: clamp(10px, 1.5dvw, 18px);
+        }
+
+        .title {
+          font-size: clamp(10px, 1.3dvw, 14px);
+          letter-spacing: -0.28px;
+        }
+
+        .phone-number {
+          grid-column: 2 / 3;
+          font-size: clamp(16px, 2.3dvw, 24px);
+          letter-spacing: -0.64px;
+        }
+      }
+    }
+  }
+}

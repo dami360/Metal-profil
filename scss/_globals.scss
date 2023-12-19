@@ -1,0 +1,78 @@
+//
+$c_main-red: #F03336;
+$c_white: #FFFFFF;
+$c_timberwolf: #D3D3D3;
+$c_grey: #1A1A1A;
+$c_night: #0B090A;
+//
+
+//
+.fc-r {
+  color: $c_main-red;
+}
+
+.section-shadow {
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 10px 2px #000;
+}
+
+.element-shadow {
+  box-shadow: 0 0 4px 0 #000;
+}
+
+//
+
+//
+h3 {
+  font-size: clamp(14px, 1.7dvw, 24px);
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  font-family: 'Rajdhani', sans-serif;
+
+  &.neutral-case {
+    text-transform: unset !important;
+    letter-spacing: unset !important;
+  }
+}
+
+h2 {
+  font-size: clamp(28px, 3.4dvw, 48px);
+  font-weight: 600;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+  font-family: 'Rajdhani', sans-serif !important;
+}
+
+h1 {
+  font-size: clamp(36px, 4.8dvw, 64px);
+  font-weight: 700;
+  line-height: clamp(50px, 5dvw, 64px);
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+  font-family: 'Rajdhani', sans-serif !important;
+}
+
+a {
+  color: $c_white;
+  text-decoration: none;
+}
+
+hr {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: clamp(12px, 1.5dvw, 16px);
+  line-height: clamp(20px, 2.5dvw, 24px);
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.32px;
+  margin: 20px 0;
+}
+
+gap60{
+  margin: 60px 0;
+}
+
+//
