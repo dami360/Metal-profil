@@ -9,7 +9,7 @@
 
     > .con {
       display: grid;
-      padding: clamp(80px, 15dvh, 120px) 0;
+      padding: clamp(80px, 15dvh, 120px) 40px;
       width: clamp(700px, 80dvw, 1200px);
       height: 100%;
     }
@@ -43,8 +43,6 @@
       justify-items: center;
 
       .text {
-        width: clamp(400px, 45dvw, 1000px);
-
         hr {
           border: 1px solid $c_timberwolf;
           opacity: 0.3;
@@ -195,10 +193,26 @@
               filter: saturate(0) brightness(0.6);
             }
 
-            &:hover{
+            &:hover {
               scale: 1.05;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    #about {
+
+      > .con {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 20dvh;
+
+        .image {
+          width: 100%;
         }
       }
     }
