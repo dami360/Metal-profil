@@ -36,7 +36,6 @@
   }
 
   #about {
-    background-color: $c_grey;
 
     > .con {
       grid-template-columns: 3fr 2fr;
@@ -61,6 +60,8 @@
   }
 
   #offer {
+    background-color: $c_night;
+
     > .con {
       grid-template-columns: 1fr;
 
@@ -161,7 +162,6 @@
   }
 
   #gallery {
-    background-color: $c_grey;
 
     > .con {
       grid-template-columns: 1fr;

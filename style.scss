@@ -1,6 +1,8 @@
 @import "/scss/globals";
 @import "/scss/nav";
 @import "/scss/main";
+@import "/scss/blog";
+@import "/scss/blog-page";
 @import "/scss/footer";
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Rajdhani:wght@400;600;700&display=swap');
 
@@ -15,7 +17,7 @@ html {
 }
 
 body {
-  background-color: $c_night;
+  background-color: $c_grey;
   color: $c_white;
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;

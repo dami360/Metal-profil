@@ -25,7 +25,7 @@
                     <a href="#gallery">Galeria</a>
                 </li>
                 <li>
-                    <a href="#blog">Blog</a>
+                    <a href="blog.html">Blog</a>
                 </li>
                 <li>
                     <a href="#contact">Kontakt</a>
@@ -131,15 +131,29 @@
 </main>
 <!-- stopka (element stały) -->
 <footer id="contact" class="section-shadow">
-    <h3 class="fc-r">Kontakt</h3>
+        <h3 class="fc-r">Kontakt</h3>
     <div class="con">
         <div class="data">
-
+            <i class="fa-solid fa-map-pin"></i>
+            <p>Starkówiec Piątkowski 33<br>63-000 Środa Wielkopolska</p>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:601179602">
+                <p>+48 601 179 602<br>+48 601 179 603</p>
+            </a>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:metal-profil@wp.pl">
+                <p>metal-profil@wp.pl</p>
+            </a>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4426.980380151636!2d17.422121839217073!3d52.189122062332714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4704e75c84ccb727%3A0x268b21bd5543aabd!2sMETAL-PROFIL!5e1!3m2!1spl!2sus!4v1703011999606!5m2!1spl!2sus"
                 style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <form action=""></form>
+                referrerpolicy="no-referrer-when-downgrade" class="element-shadow"></iframe>
+        <form action="" onsubmit="return false;">
+            <input type="text" name="imie" id="imie" placeholder="Imię">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <textarea name="tresc" id="tresc" placeholder="Treść"></textarea>
+            <input type="submit" value="Wyślij">
+        </form>
     </div>
 </footer>
 <!-- -->

@@ -1,0 +1,61 @@
+main.blog {
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 180px;
+
+  hr{
+    width: 80dvw;
+  }
+
+  > .con {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, max(250px));
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 40px clamp(80px, 15dvh, 120px) 40px;
+    width: 80dvw;
+    height: 100%;
+
+
+
+    a {
+      article {
+        aspect-ratio: 2 / 3;
+
+        img {
+          width: 100%;
+          aspect-ratio: 3 / 2;
+          object-fit: cover;
+        }
+
+        h3, p, .date{
+          margin: 5px;
+        }
+
+        .date, p{
+          display: block;
+          color: $c_timberwolf;
+        }
+
+        .date{
+          font-size: 0.8em;
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main.blog {
+    padding-top: 60px;
+
+    > .con {
+      padding: 40px;
+      gap: 0;
+    }
+  }
+}

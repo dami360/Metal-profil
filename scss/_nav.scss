@@ -97,3 +97,29 @@
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  .nav {
+    display: none;
+    .con {
+
+      .menu-block {
+
+        ul {
+
+          li {
+
+          }
+        }
+
+        .image {
+          display: none;
+        }
+      }
+
+      .phone-block {
+        display: none;
+      }
+    }
+  }
+}
