@@ -3,7 +3,7 @@ main.blog {
   flex-flow: nowrap column;
   justify-content: center;
   align-items: center;
-  padding-top: 180px;
+  padding-top: 160px;
 
   hr{
     width: 80dvw;
@@ -51,7 +51,7 @@ main.blog {
 
 @media screen and (max-width: 800px) {
   main.blog {
-    padding-top: 60px;
+    padding-top: 40px;
 
     > .con {
       padding: 40px;

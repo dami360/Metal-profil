@@ -88,8 +88,10 @@
 
 @media screen and (max-width: 1200px) {
   #contact {
+    padding: clamp(50px, 10dvh, 80px) 10dvw clamp(30px, 5dvh, 80px) 10dvw;
+
     .con {
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 1fr;
       gap: 40px 20px;
 
       > form {
@@ -103,6 +105,8 @@
 
 @media screen and (max-width: 800px) {
   #contact {
+    padding: clamp(30px, 7dvh, 80px) 10dvw clamp(30px, 5dvh, 80px) 10dvw;
+
     .con {
       grid-template-columns: 1fr;
       gap: 40px 0;
