@@ -80,6 +80,7 @@
   #about {
 
     > .con {
+      position: relative;
       grid-template-columns: 3fr 2fr;
       justify-items: center;
 
@@ -87,6 +88,25 @@
         hr {
           border: 1px solid $c_timberwolf;
           opacity: 0.3;
+        }
+
+        a {
+          display: block;
+          width: fit-content;
+          margin-top: 50px;
+          padding: 20px 25px;
+          border: 1px solid $c_white;
+          background: transparent;
+          color: $c_white;
+          transition: background-color 0.2s;
+
+          h3 {
+            white-space: nowrap;
+          }
+
+          &:hover {
+            background: rgba($c_white, 0.1);
+          }
         }
       }
 
@@ -98,6 +118,7 @@
         background-position: center center;
         background-size: cover;
       }
+
 
       .staff {
         grid-column: 1 / 3;
@@ -134,7 +155,7 @@
             h3 {
               font-size: 160%;
 
-              &:last-of-type{
+              &:last-of-type {
                 font-size: 85%;
               }
             }
